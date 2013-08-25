@@ -3,8 +3,24 @@
 
 #include "cocos2d.h"
 
-class GameScene : public cococs2d::CCLayer
+#define PNG_BACKGROUND "background.png"
+
+class GameScene : public cocos2d::CCLayer
 {
+    protected:
+        enum kTag
+        {
+            kTagBackground = 1,
+        };
+
+        enum kZOrder
+        {
+            kZOrderBackground,
+        };
+
+        cocos2d::CCSprite* m_background;
+        void showBackground();
+
     public:
         virtual bool init();
         static cocos2d::CCScene* scene();
@@ -12,4 +28,4 @@ class GameScene : public cococs2d::CCLayer
 
 };
 
-#endif // __GAMESCENE_H__#endif // __GAMESCENE_H__
+#endif // __GAMESCENE_H__

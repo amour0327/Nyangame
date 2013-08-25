@@ -19,5 +19,17 @@ bool GameScene::init()
         return false;
     }
 
+    showBackground();
+
     return true;
 }
+
+void GameScene::showBackground()
+{
+    CCSize winSize = CCDirector::sharedDirector()->getWinSize();
+
+    m_background = CCSprite::create( PNG_BACKGROUND );
+    m_background->setPosition( ccp( winSize.width / 2, winSize.height /2 ) );
+    addChild( m_background, kZOrderBackground, kTagBackground );
+}
+
