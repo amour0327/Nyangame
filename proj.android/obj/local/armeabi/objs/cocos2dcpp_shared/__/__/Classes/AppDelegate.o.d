@@ -203,7 +203,7 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/AppDelegate.o: \
  /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../cocos2dx/support/data_support/uthash.h \
  /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../cocos2dx/support/component/CCComponent.h \
  /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../cocos2dx/support/component/CCComponentContainer.h \
- jni/../../Classes/GameScene.h
+ jni/../../Classes/GameScene.h jni/../../Classes/Config.h
 
 jni/../../Classes/AppDelegate.h:
 
@@ -614,3 +614,5 @@ jni/../../Classes/AppDelegate.h:
 /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../cocos2dx/support/component/CCComponentContainer.h:
 
 jni/../../Classes/GameScene.h:
+
+jni/../../Classes/Config.h:

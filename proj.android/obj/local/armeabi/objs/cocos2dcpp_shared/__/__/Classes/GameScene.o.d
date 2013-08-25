@@ -203,8 +203,10 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/GameScene.o: \
  /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../cocos2dx/support/data_support/uthash.h \
  /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../cocos2dx/support/component/CCComponent.h \
  /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../cocos2dx/support/component/CCComponentContainer.h \
+ jni/../../Classes/Config.h \
  /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../CocosDenshion/android/../include/SimpleAudioEngine.h \
- /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../CocosDenshion/android/../include/Export.h
+ /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../CocosDenshion/android/../include/Export.h \
+ jni/../../Classes/BlockSprite.h
 
 jni/../../Classes/GameScene.h:
 
@@ -614,6 +616,10 @@ jni/../../Classes/GameScene.h:
 
 /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../cocos2dx/support/component/CCComponentContainer.h:
 
+jni/../../Classes/Config.h:
+
 /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../CocosDenshion/android/../include/SimpleAudioEngine.h:
 
 /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../CocosDenshion/android/../include/Export.h:
+
+jni/../../Classes/BlockSprite.h:
