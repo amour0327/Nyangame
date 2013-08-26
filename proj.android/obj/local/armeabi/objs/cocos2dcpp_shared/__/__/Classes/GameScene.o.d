@@ -206,7 +206,7 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/GameScene.o: \
  jni/../../Classes/Config.h \
  /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../CocosDenshion/android/../include/SimpleAudioEngine.h \
  /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../CocosDenshion/android/../include/Export.h \
- jni/../../Classes/BlockSprite.h
+ jni/../../Classes/BlockSprite.h jni/../../Classes/CCPlaySE.h
 
 jni/../../Classes/GameScene.h:
 
@@ -623,3 +623,5 @@ jni/../../Classes/Config.h:
 /Applications/cocos2d-x-2.1.4/projects/Nyangame/proj.android/../../../CocosDenshion/android/../include/Export.h:
 
 jni/../../Classes/BlockSprite.h:
+
+jni/../../Classes/CCPlaySE.h:
