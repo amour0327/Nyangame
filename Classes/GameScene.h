@@ -7,6 +7,7 @@
 #define MAX_BLOCK_X 8
 #define MAX_BLOCK_Y 8
 #define PNG_BACKGROUND "background.png"
+#define MP3_REMOVE_BLOCK "removeBlock.mp3"
 
 class GameScene : public cocos2d::CCLayer
 {
@@ -32,6 +33,11 @@ class GameScene : public cocos2d::CCLayer
         void showBlock();
         cocos2d::CCPoint getPosition( int posIndexX, int posIndexY );
         int getTag( int posIndexX, int posIndexY );
+
+        void getTouchBlockTag( cocos2d::CCPoint touchPoint, int &tag, kBlock &blockType );
+        std::list<int> getSameColorBlockTags( int baseTag, kBlock blockType );
+        void removeBlock( std::list<int> blockTags, kBlock blockType );
+        bool hasSameColorBlock( std::list<int> blockTagList, int searchBlockTag );
 
     public:
         virtual bool init();
