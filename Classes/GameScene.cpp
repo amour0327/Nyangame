@@ -20,6 +20,9 @@ bool GameScene::init()
         return false;
     }
 
+    setTouchEnabled( true );
+    setTouchMode( kCCTouchesOneByOne );
+
     initForVariables();
 
     showBackground();
@@ -71,4 +74,14 @@ void GameScene::showBlock()
             m_background->addChild( pBlock, kZOrderBlock, tag );
         }
     }
+}
+
+bool GameScene::ccTouchBegan( CCTouch* pTouch, CCEvent* pEvent )
+{
+    return true;
+}
+
+void GameScene::ccTouchEnded( CCTouch* pTouch, CCEvent* pEvent )
+{
+    CCLog( "ccTouchEnded" );
 }

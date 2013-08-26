@@ -38,6 +38,9 @@ class GameScene : public cocos2d::CCLayer
         static cocos2d::CCScene* scene();
         CREATE_FUNC( GameScene );
 
+        virtual bool ccTouchBegan( cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent );
+        virtual void ccTouchEnded( cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent );
+
 };
 
 #endif // __GAMESCENE_H__
