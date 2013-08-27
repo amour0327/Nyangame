@@ -8,7 +8,7 @@
 Android DeveloperサイトのNDKページからダウンロードしてきます。  
 ただし、Cocos2d-x 2.1.4バージョンだと NDK r9 を使うとエラーになる為、今回はr8eを使用しました。
 
-**Eclipse上の環境設定**
+**Eclipse上の環境設定**  
 Eclipseを起動してメニュー上から「Eqlipse >環境設定」を選びます。  
 「Android > NDK」にある「NDKLocation」項目へ「/(Android NDKを配置したディレクトリ)/android-ndk-r8e」を設定します。
 同じように環境設定から「C/C++ > Build > Environment」で「Add」ボタンを押下し、  
@@ -17,7 +17,7 @@ Eclipseを起動してメニュー上から「Eqlipse >環境設定」を選び�
 ## Cocos2d-x のセットアップ
 Cocos2d-xのwikiからCocos2d-xをダウンロードしてください。
 
-**Android SDK/NDKインストール ディレクトリを設定**
+**Android SDK/NDKインストール ディレクトリを設定**  
 cocos2d-x-2.1.4/create-android-project.sh ファイルの最初にある二行を以下のように置き換えます。
 ```
 NDK_ROOT_LOCAL="/(Android NDKを配置したディレクトリ)/android-ndk-r8e"
