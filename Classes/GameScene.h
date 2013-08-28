@@ -7,6 +7,7 @@
 #define MAX_BLOCK_X 8
 #define MAX_BLOCK_Y 8
 #define REMOVE_TIME 0.1f
+#define MOVING_TIME 0.2f
 #define PNG_BACKGROUND "background.png"
 #define MP3_REMOVE_BLOCK "removeBlock.mp3"
 
@@ -25,6 +26,17 @@ class GameScene : public cocos2d::CCLayer
             kZOrderBlock,
         };
 
+        struct PositionIndex
+        {
+            PositionIndex( int x1, int y1 )
+            {
+                x = x1;
+                y = y1;
+            }
+            int x;
+            int y;
+        };
+
         cocos2d::CCSprite* m_background;
         void showBackground();
 
@@ -41,6 +53,13 @@ class GameScene : public cocos2d::CCLayer
         bool hasSameColorBlock( std::list<int> blockTagList, int searchBlockTag );
 
         void removingBlock( cocos2d::CCNode* block );
+
+        std::vector<kBlock> blockTypes;
+        PositionIndex getPositionIndex( int tag );
+        void setNewPosition1( int tag, PositionIndex posIndex );
+        void searchNewPosition1( std::list<int> blocks );
+        void moveBlock();
+        void movingBlockAnimation1( std::list<int> blocks );
 
     public:
         virtual bool init();

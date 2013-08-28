@@ -2,6 +2,7 @@
 
 BlockSprite::BlockSprite()
 {
+    initNextPos();
 }
 
 BlockSprite::~BlockSprite()
@@ -53,4 +54,16 @@ const char* BlockSprite::getBlockImageFileName( kBlock blockType )
             CCAssert( false, "invalid blockType" );
             return "";
     }
+}
+
+void BlockSprite::initNextPos()
+{
+    m_nextPosX = -1;
+    m_nextPosY = -1;
+}
+
+void BlockSprite::setNextPos( int nextPosX, int nextPosY )
+{
+    m_nextPosX = nextPosX;
+    m_nextPosY = nextPosY;
 }
