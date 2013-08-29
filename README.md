@@ -90,3 +90,6 @@ create-multi-platform-projects.pyのオプションは以下のようになっ�
 | p	| プロジェクト名 | | |
 | k	| パッケージ名 | |.は2つ以上付けないとエラーになります |
 | l | 開発言語 | cpp<br>lua<br>javascript | |
+
+## アプリの容量
+何もないアプリをビルドしたところ容量は2Mだった
